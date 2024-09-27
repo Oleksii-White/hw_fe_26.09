@@ -1,0 +1,29 @@
+.header {
+    max-width: 1600px;
+}
+.headerNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100px 0.6fr 200px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: 
+    "card123 card123 card123"
+    "card4578 card4578 card69"
+    "card4578 card4578 card69";
+}
+.card {
+    border: 1px solid black;
+}
+.cardItem1, .cardItem2, .cardItem3 {
+    grid-area: card123;
+}
+.cardItem4, .cardItem5, .cardItem7, .cardItem8 {
+    grid-area: card4578;
+}
+.cardItem6, .cardItem9 {
+    grid-area: card69;
+}
